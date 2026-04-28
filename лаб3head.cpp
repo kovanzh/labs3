@@ -19,14 +19,10 @@ struct Node {
         delete next;
     }
 };
-
-Node<int>* insert_at_head(Node<int>* head, int value) {
     Node<int>* insert_at_head(Node<int>*head, int value); {
         Node<int>* newNode = new Node<int>(value, head);
         return newNode; // Цей вузол стає новою головою
     }
-    return nullptr;
-}
 
 template<typename T, typename Iter, typename F>
 Node<T>* build_list(Iter& it, Iter& end, F f) {
