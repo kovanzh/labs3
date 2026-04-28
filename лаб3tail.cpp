@@ -19,8 +19,6 @@ struct Node {
         delete next;
     }
 };
-
-Node<int>* insert_at_tail(Node<int>* head, int value) {
     Node<int>* insert_at_tail(Node<int>*head, int value); {
         Node<int>* newNode = new Node<int>(value);
 
@@ -36,8 +34,6 @@ Node<int>* insert_at_tail(Node<int>* head, int value) {
         current->next = newNode; // Прив'язуємо новий вузол у кінець
         return head;
     }
-    return nullptr;
-}
 
 template<typename T, typename Iter, typename F>
 Node<T>* build_list(Iter& it, Iter& end, F f) {
