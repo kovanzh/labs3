@@ -19,19 +19,20 @@ struct Node {
         delete next;
     }
 };
-    int search_linked_list(Node<int>*head, int target);2 {
-    Node<int>* current = head;
 
-    while (current != nullptr) {
-        if (current->val == target) {
-            return 1; // Знайшли
+int search_linked_list(Node<int>* head, int target) {
+        Node<int>* current = head;
+
+        while (current != nullptr) {
+            if (current->val == target) {
+                return 1; // Знайшли
+            }
+            current = current->next;
         }
-        current = current->next;
+
+        return 0; // Дійшли до кінця (null) і не знайшли
     }
-
-    return 0; // Дійшли до кінця (null) і не знайшли
-}
-
+   
 template<typename T, typename Iter, typename F>
 Node<T>* build_list(Iter& it, Iter& end, F f) {
     if (it == end) return nullptr;
