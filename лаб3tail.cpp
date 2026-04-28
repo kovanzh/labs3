@@ -19,7 +19,8 @@ struct Node {
         delete next;
     }
 };
-    Node<int>* insert_at_tail(Node<int>*head, int value); {
+
+Node<int>* insert_at_tail(Node<int>* head, int value) {
         Node<int>* newNode = new Node<int>(value);
 
         if (head == nullptr) {
