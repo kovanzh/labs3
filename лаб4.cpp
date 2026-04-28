@@ -20,8 +20,6 @@ struct Node {
         delete next;
     }
 };
-
-Node<int>* delete_node(Node<int>* head, int value) {
     Node<int>* delete_node(Node<int>*head, int value); {
         // Окремий випадок: якщо видалити треба саму голову
         if (head != nullptr && head->val == value) {
@@ -47,8 +45,6 @@ Node<int>* delete_node(Node<int>* head, int value) {
 
         return head; // Якщо значення не знайдено, повертаємо список як є
     }
-    return nullptr;
-}
 
 template<typename T, typename Iter, typename F>
 Node<T>* build_list(Iter& it, Iter& end, F f) {
