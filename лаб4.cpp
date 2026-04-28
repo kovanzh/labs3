@@ -20,7 +20,8 @@ struct Node {
         delete next;
     }
 };
-    Node<int>* delete_node(Node<int>*head, int value); {
+
+Node<int>* delete_node(Node<int>* head, int value) {
         // Окремий випадок: якщо видалити треба саму голову
         if (head != nullptr && head->val == value) {
             Node<int>* newHead = head->next;
