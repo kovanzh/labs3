@@ -19,8 +19,6 @@ struct Node {
         delete next;
     }
 };
-
-int search_linked_list(Node<int>* head, int target) {
     int search_linked_list(Node<int>*head, int target);2 {
     Node<int>* current = head;
 
@@ -32,8 +30,6 @@ int search_linked_list(Node<int>* head, int target) {
     }
 
     return 0; // Дійшли до кінця (null) і не знайшли
-}
-    return 0;
 }
 
 template<typename T, typename Iter, typename F>
