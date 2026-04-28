@@ -18,8 +18,6 @@ struct Node {
         delete next;
     }
 };
-
-int count_nodes(Node<int>* head) {
     int count_nodes(Node<int>*head); {
         int count = 0;
         Node<int>* current = head;
@@ -31,9 +29,6 @@ int count_nodes(Node<int>* head) {
 
         return count;
     }
-    return 0;
-}
-
 template<typename T, typename Iter, typename F>
 Node<T>* build_list(Iter& it, Iter& end, F f) {
     if (it == end) return nullptr;
