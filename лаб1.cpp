@@ -18,8 +18,6 @@ struct Node {
         delete next;
     }
 };
-
-Node<int>* create_linked_list(std::vector<int>& values) {
     Node<int>* create_linked_list(std::vector<int>&values); {
         if (values.empty()) return nullptr; // Якщо масив порожній, повертаємо null
 
@@ -33,8 +31,6 @@ Node<int>* create_linked_list(std::vector<int>& values) {
 
         return head; // Повертаємо голову нового списку
     }
-    return nullptr;
-}
 
 template<typename T>
 std::vector<T> get_words() {
